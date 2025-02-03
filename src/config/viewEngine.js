@@ -1,13 +1,12 @@
-const path = require('path')
-const express = require('express')
-
+import path from 'path';
+import express from 'express';
 
 const configViewEngine = (app) => {
-    console.log("Check duong dan ", path.join('./src', 'views'))
-    app.set('views', path.join('./src', 'views'))
-    app.set('view engine', 'ejs')
+    console.log("Check đường dẫn ", path.join('./src', 'views'));
+    app.set('views', path.join('./src', 'views'));
+    app.set('view engine', 'ejs');
 
-    app.use(express.static(path.join('./src', 'public')))
-}
+    app.use(express.static(path.join('./src', 'public')));
+};
 
-module.exports = configViewEngine
+export default configViewEngine;

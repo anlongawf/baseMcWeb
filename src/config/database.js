@@ -1,5 +1,5 @@
-require("dotenv").config();
-const mariadb = require("mariadb");
+import 'dotenv/config';
+import mariadb from 'mariadb';
 
 const pool = mariadb.createPool({
     host: process.env.DATABASE_HOST,
@@ -11,13 +11,4 @@ const pool = mariadb.createPool({
     acquireTimeout: 20000,
 });
 
-pool.getConnection()
-    .then(conn => {
-        console.log("Đã kết nối Database!");
-        conn.release(); 
-    })
-    .catch(err => {
-        console.error("Không thể kết nối Database:", err);
-    });
-
-module.exports = pool;
+export default pool;

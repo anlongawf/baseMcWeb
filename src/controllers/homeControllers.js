@@ -1,25 +1,8 @@
-const getHomepage = (req, res) => {
-    return res.render('home');
+
+export const getHomepage = (req, res) => {
+    res.send('Trang chủ');
 };
 
-const getLogin = (req, res) => {
-    return res.render('login');
+export const getLogin = (req, res) => {
+    res.send('Trang đăng nhập');
 };
-
-const getRegister = (req, res) => {
-    return res.render('register');
-};
-
-const getLeaderBoard = (req, res) => {
-    return res.render('top');
-};
-
-const getTutorial = (req, res) => {
-    return res.render('tutorial');
-};
-
-const getDonate= (req, res) => {
-    return res.render('donate');
-};
-
-module.exports = { getHomepage, getLogin, getRegister, getLeaderBoard, getTutorial, getDonate };

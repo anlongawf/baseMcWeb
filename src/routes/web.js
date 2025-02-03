@@ -1,12 +1,31 @@
-const express = require('express');
-const { getHomepage, getLogin, getRegister, getTutorial, getDonate, getLeaderBoard } = require('../controllers/homeControllers'); 
-const router = express.Router(); 
+import express from 'express';
+import accountController from '../controllers/accountController.js';
 
-router.get('/', getHomepage);
-router.get('/login', getLogin);
-router.get('/register', getRegister);
-router.get('/tutorial', getTutorial);
-router.get('/donate', getDonate);
-router.get('/top', getLeaderBoard);
+const router = express.Router();
 
-module.exports = router;  
+router.get('/', (req, res) => {
+    res.render('home');
+});
+
+router.get('/home', (req, res) => {
+    res.render('home');
+});
+
+router.get('/login', (req, res) => {
+    res.render('login');
+});
+
+router.post('/login', accountController.login);
+
+router.post('/register', accountController.register);
+
+// Debug
+router.post('/login', (req, res, next) => {
+    console.log('Login Route - Detailed Logging:');
+    console.log('Full Request Body:', req.body);
+    console.log('Username:', req.body.username);
+    console.log('Password:', req.body.password);
+    next();
+}, accountController.login);
+
+export default router;
