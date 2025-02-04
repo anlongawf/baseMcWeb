@@ -20,12 +20,12 @@ router.post('/login', accountController.login);
 router.post('/register', accountController.register);
 
 // Debug
-router.post('/login', (req, res, next) => {
-    console.log('Login Route - Detailed Logging:');
-    console.log('Full Request Body:', req.body);
-    console.log('Username:', req.body.username);
-    console.log('Password:', req.body.password);
-    next();
-}, accountController.login);
+// router.post('/login', (req, res, next) => {
+//     console.log('Login Route - Detailed Logging:');
+//     console.log('Full Request Body:', req.body);
+//     console.log('Username:', req.body.username);
+//     console.log('Password:', req.body.password);
+//     next();
+// }, accountController.login);
 
 export default router;

@@ -66,10 +66,10 @@ class AccountController {
     }
     // Debug
     async login(req, res) {
-        console.log('AccountController - Login Method:');
-        console.log('Received Request Body:', req.body);
-        console.log('Username:', req.body?.username);
-        console.log('Password:', req.body?.password ? '[HIDDEN]' : 'NOT PROVIDED');
+        // console.log('AccountController - Login Method:');
+        // console.log('Received Request Body:', req.body);
+        // console.log('Username:', req.body?.username);
+        // console.log('Password:', req.body?.password ? '[HIDDEN]' : 'NOT PROVIDED');
     
         try {
             const { username, password } = req.body;

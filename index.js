@@ -32,14 +32,14 @@ configViewEngine(app);
 app.use('', webRouter);
 
 // Debug
-app.use((req, res, next) => {
-    console.log('Global Middleware Logging:');
-    console.log('Request Method:', req.method);
-    console.log('Request Path:', req.path);
-    console.log('Request Headers:', req.headers);
-    console.log('Request Body:', req.body);
-    next();
-});
+// app.use((req, res, next) => {
+//     console.log('Global Middleware Logging:');
+//     console.log('Request Method:', req.method);
+//     console.log('Request Path:', req.path);
+//     console.log('Request Headers:', req.headers);
+//     console.log('Request Body:', req.body);
+//     next();
+// });
 
 app.listen(3000, () => {
     console.log('Server đang chạy trên cổng 3000');
