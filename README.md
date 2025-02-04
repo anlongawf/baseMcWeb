@@ -55,6 +55,8 @@ Special Thanks
 
 MineClub: ...
 
+Antc2: Xin cảm ơn Antc2 vì những ý tưởng đóng góp và hỗ trợ thuật toán quý báu cho dự án.
+
 ShineLord Network: Cảm ơn ShineLord Network đã tạo điều kiện để dự án được hoàn thiện.
 
 Những người đóng góp: Cảm ơn tất cả những người đã đóng góp mã nguồn, ý tưởng và hỗ trợ kỹ thuật.
@@ -62,7 +64,7 @@ Những người đóng góp: Cảm ơn tất cả những người đã đóng 
 Liên hệ
 Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, vui lòng liên hệ qua email: 
 
-Lưu ý: Dự án này không phải là public và chỉ được sử dụng nội bộ. Vui lòng không chia sẻ hoặc sử dụng mã nguồn mà không có sự cho phép.
+Lưu ý: Dự án này được Public, không có giá trị thương mại
 
 Lưu ý thêm: Đây chỉ là Base. Nếu bạn là thành viên của MineClub, vui lòng truy cập GitHub MineClub để sử dụng phiên bản dành riêng cho MineClub. Ngược lại, nếu bạn là thành viên của ShineLord Network, vui lòng truy cập GitHub ShineLord để sử dụng phiên bản dành riêng cho ShineLord.
 
