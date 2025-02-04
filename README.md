@@ -2,7 +2,6 @@
 
 Dự án này là một **nền tảng (base)** được phát triển bằng Node.js, dùng để hỗ trợ và quản lý **Minecraft Server**. Nó được thiết kế để phát triển cho cộng đồng **MineClub** và **ShineLord Network**.
 
-> **Lưu ý**: Dự án này **không phải là public** (không công khai) và chỉ được sử dụng nội bộ cho **MineClub** và **ShineLord Network**. Vui lòng không chia sẻ mã nguồn hoặc sử dụng cho mục đích cá nhân mà không có sự cho phép.
 
 ## Tính năng chính của base
 

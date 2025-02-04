@@ -5,18 +5,25 @@ import configViewEngine from './src/config/viewEngine.js';
 import database from './src/config/database.js';
 
 // Connect db
+// async function connectDatabase() {
+//     try {
+//         const conn = await database.getConnection();
+//         console.log('Kết nối database thành công');
+//         conn.release(); // Giải phóng kết nối sau khi sử dụng
+//     } catch (err) {
+//         console.error('Lỗi kết nối database:', err);
+//     }
+// }
+
 async function connectDatabase() {
     try {
         const conn = await database.getConnection();
-        console.log('Kết nối database thành công');
-        conn.release(); // Giải phóng kết nối sau khi sử dụng
-    } catch (err) {
-        console.error('Lỗi kết nối database:', err);
+        console.log("Connected Authme Database")
+        conn.release();
+    } catch(err) {
+        console.error('Connect fail Authme Database')
     }
 }
-
-// Function connect db
-connectDatabase();
 
 const app = express();
 
