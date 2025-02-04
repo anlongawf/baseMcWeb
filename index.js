@@ -4,7 +4,7 @@ import webRouter from './src/routes/web.js';
 import configViewEngine from './src/config/viewEngine.js';
 import database from './src/config/database.js';
 
-// Kết nối database
+// Connect db
 async function connectDatabase() {
     try {
         const conn = await database.getConnection();
@@ -15,11 +15,12 @@ async function connectDatabase() {
     }
 }
 
-// Gọi hàm kết nối
+// Function connect db
 connectDatabase();
 
 const app = express();
 
+// Config Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -30,9 +31,7 @@ configViewEngine(app);
 // Config Routers
 app.use('', webRouter);
 
-// Khởi tạo controller
 // Debug
-// Sau các middleware hiện tại
 app.use((req, res, next) => {
     console.log('Global Middleware Logging:');
     console.log('Request Method:', req.method);
@@ -42,7 +41,6 @@ app.use((req, res, next) => {
     next();
 });
 
-// Lắng nghe trên cổng 3000 và hiển thị thông báo khi server đã sẵn sàng
 app.listen(3000, () => {
     console.log('Server đang chạy trên cổng 3000');
 });

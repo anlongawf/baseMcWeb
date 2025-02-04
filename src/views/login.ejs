@@ -7,10 +7,7 @@
 </head>
 <body>
     <h2>Đăng nhập</h2>
-    <!-- Hiển thị thông báo lỗi nếu có -->
-    <% if (typeof error !== 'undefined') { %>
-        <p style="color:red;"><%= error %></p>
-    <% } %>
+
     <form action="/login" method="POST">
         <label for="username">Tên đăng nhập:</label>
         <input type="text" id="username" name="username" required>
